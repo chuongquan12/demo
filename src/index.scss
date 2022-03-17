@@ -1,0 +1,72 @@
+@import './assets/style/colors';
+@import './assets/style/global';
+@import './assets/style/screen';
+
+@font-face {
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+body {
+    margin: 0;
+    font-family: Montserrat, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+code {
+    font-family: Montserrat, 'Courier New', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color_white;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+input,
+button {
+    border: none;
+    background: none;
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+label {
+    display: block;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $color_vivid_tangerine;
+    border-radius: 10px;
+}

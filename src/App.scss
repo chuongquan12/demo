@@ -1,0 +1,78 @@
+@import '~antd/dist/antd.css';
+
+@import './assets/style/colors';
+@import './assets/style/global';
+@import './assets/style/screen';
+
+.app {
+    &__header {
+        padding: 2rem 0;
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 0.5rem 0;
+        border-radius: 15px;
+        border: 1px solid $color_eerie_black;
+
+        transition: all 750ms;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $color_eerie_black;
+            color: $color_white;
+            background-color: $color_eerie_black;
+
+            transition: all 750ms;
+        }
+    }
+
+    &__options {
+        padding: 2rem 0;
+
+        &--input {
+            margin: 0.25rem;
+
+            width: 10rem;
+        }
+
+        &--checkbox {
+            margin: 0.25rem;
+
+            max-width: 15rem;
+        }
+
+        &--label {
+            margin: 0.25rem 0;
+        }
+        &-text {
+            margin: 0 0.25rem;
+            font-weight: 700;
+        }
+
+        &--group {
+            width: 15rem;
+            &-text {
+                margin: 0 0.1rem;
+                font-weight: 700;
+            }
+        }
+
+        &--btn {
+            padding: 0.25rem 1.25rem;
+            margin: 0 0.25rem;
+            color: $color_eerie_black;
+            border: 1px solid $color_eerie_black;
+            border-radius: 10px;
+
+            transition: all 750ms;
+
+            &:hover,
+            &:focus {
+                color: $color_white;
+                background-color: $color_eerie_black;
+                transition: all 750ms;
+            }
+        }
+    }
+}
