@@ -1,0 +1,109 @@
+@import '../../assets/style/colors';
+@import '../../assets/style/global';
+@import '../../assets/style/screen';
+
+.app {
+    &__header {
+        padding: 2rem 0;
+
+        &--title {
+            font-size: 1.5rem;
+        }
+
+        &--btn {
+            font-size: 1.25rem;
+            margin: 0 0.5rem;
+
+            padding: 0.25rem 0.65rem;
+            border-radius: 50%;
+            transition: all 750ms;
+
+            &:hover,
+            &:focus {
+                color: $color_white;
+                background-color: $color_eerie_black;
+
+                transition: all 750ms;
+            }
+        }
+    }
+
+    &__btn {
+        margin: 0.5rem 0;
+        width: 100%;
+        padding: 0.5rem 0;
+        border-radius: 15px;
+        border: 1px solid $color_eerie_black;
+        text-align: center;
+        color: $color_eerie_black;
+
+        transition: all 750ms;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $color_eerie_black;
+            color: $color_white;
+            background-color: $color_eerie_black;
+
+            transition: all 750ms;
+        }
+    }
+
+    &__options {
+        padding: 2rem 0;
+
+        &--select {
+            margin: 0.25rem;
+
+            width: 10rem;
+        }
+
+        &--input {
+            margin: 0.25rem;
+
+            width: 100%;
+        }
+
+        &--checkbox {
+            width: 100%;
+            margin: 0.25rem;
+
+            &-item > label {
+                width: 10rem;
+            }
+        }
+
+        &--label {
+            margin: 0.25rem 0;
+        }
+        &-text {
+            margin: 0 0.25rem;
+            font-weight: 700;
+        }
+
+        &--group {
+            width: 15rem;
+            &-text {
+                margin: 0 0.1rem;
+                font-weight: 700;
+            }
+        }
+
+        &--btn {
+            padding: 0.25rem 1.25rem;
+            margin: 0 0.25rem;
+            color: $color_eerie_black;
+            border: 1px solid $color_eerie_black;
+            border-radius: 10px;
+
+            transition: all 750ms;
+
+            &:hover,
+            &:focus {
+                color: $color_white;
+                background-color: $color_eerie_black;
+                transition: all 750ms;
+            }
+        }
+    }
+}
